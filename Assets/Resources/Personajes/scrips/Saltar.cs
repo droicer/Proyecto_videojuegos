@@ -2,51 +2,61 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine;
+
 public class Saltare : MonoBehaviour
 {
-    public float jumpForce = 10f; // Fuerza del salto
-    private Rigidbody2D rb; // Referencia al Rigidbody2D
-    private bool isGrounded; // Para verificar si está en el suelo
+    public float jumpForce = 10f;
+    private Rigidbody2D rb;
 
-    // Start is called before the first frame update
+    [Header("Ground Check")]
+    public Transform groundCheck;            // Objeto para verificar el suelo
+    public float checkRadius = 0.2f;         // Radio de detección
+    public LayerMask groundLayer;            // Capa de suelo
+
+    private bool isGrounded;
+
+    [Header("Audio")]
+    public AudioClip jumpSound;
+    private AudioSource audioSource;
+
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>(); // Obtener el componente Rigidbody2D
+        rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // Verificar si se presiona espacio y si está en el suelo
+        // Detectar si está en el suelo
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, groundLayer);
+
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             Jump();
-
         }
     }
 
     void Jump()
     {
-        // Aplicar fuerza vertical para el salto
-        rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-        isGrounded = false;
-    }
+        // Opcional dentro de Jump()
+        rb.velocity = new Vector2(rb.velocity.x, 0); // Reset vertical
+        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("Colisionó con: " + collision.gameObject.name);
-        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Pared"))
+
+        if (jumpSound != null && audioSource != null)
         {
-            isGrounded = true;
+            audioSource.PlayOneShot(jumpSound);
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    // Visual para ayudarte a ajustar el Ground Check
+    void OnDrawGizmosSelected()
     {
-        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Pared"))
+        if (groundCheck != null)
         {
-            isGrounded = false;
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(groundCheck.position, checkRadius);
         }
     }
-
 }

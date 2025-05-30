@@ -10,8 +10,24 @@ public class Moverse : MonoBehaviour
     private bool moviendoDerecha = true;
     public Collider2D colliderZombi; // Collider del zombi
 
+    public AudioClip sonidoZombi;     // Sonido del zombi
+    public float distanciaActivacion = 5f; // Distancia máxima para activar sonido
+    private AudioSource audioSource; // Fuente de audio
+    private GameObject jugador;      // Referencia al jugador
+
+
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
+
+        audioSource.loop = true; // Opcional: si el sonido debe repetirse
+        audioSource.playOnAwake = false;
+
+        jugador = GameObject.FindGameObjectWithTag("Player");
+
+
         rb = GetComponent<Rigidbody2D>();
         rb.freezeRotation = true;
         colliderZombi = GetComponent<Collider2D>();
@@ -46,6 +62,25 @@ public class Moverse : MonoBehaviour
     {
         float direccion = moviendoDerecha ? 1f : -1f;
         rb.velocity = new Vector2(direccion * velocidad, rb.velocity.y);
+
+
+        //////////////audio vericar la distacia del zombi
+
+        if (jugador != null)
+        {
+            float distancia = Vector2.Distance(transform.position, jugador.transform.position);
+
+            if (distancia <= distanciaActivacion)
+            {
+                if (!audioSource.isPlaying)
+                    audioSource.PlayOneShot(sonidoZombi);
+            }
+            else
+            {
+                audioSource.Stop();
+            }
+        }
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
