@@ -1,18 +1,30 @@
-using UnityEngine;
+Ôªøusing UnityEngine;
 
 public class Camara : MonoBehaviour
 {
     public Transform objetivo; // El personaje a seguir
-    public float suavizado = 0.125f; // QuÈ tan suave se mueve la c·mara
-    public Vector3 offset; // Para ajustar la posiciÛn de la c·mara respecto al jugador
+    public float suavizado = 0.125f;
+    public Vector3 offset;
 
     void LateUpdate()
     {
-        if (objetivo != null)
+        // üîç Si a√∫n no tenemos objetivo, lo buscamos
+        if (objetivo == null)
         {
-            Vector3 posicionDeseada = objetivo.position + offset;
-            Vector3 posicionSuavizada = Vector3.Lerp(transform.position, posicionDeseada, suavizado);
-            transform.position = new Vector3(posicionSuavizada.x, posicionSuavizada.y, transform.position.z);
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                objetivo = player.transform;
+            }
+            else
+            {
+                return; // A√∫n no hay jugador, no hacemos nada
+            }
         }
+
+        // üé• Movimiento suave de c√°mara
+        Vector3 posicionDeseada = objetivo.position + offset;
+        Vector3 posicionSuavizada = Vector3.Lerp(transform.position, posicionDeseada, suavizado);
+        transform.position = new Vector3(posicionSuavizada.x, posicionSuavizada.y, transform.position.z);
     }
 }

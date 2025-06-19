@@ -89,10 +89,10 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
-    m_Name: Base Layer
+    m_Name: player1
     m_StateMachine: {fileID: 3071629409371411157}
     m_Mask: {fileID: 0}
     m_Motions: []
@@ -238,7 +238,7 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Base Layer
+  m_Name: player1
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 4167896794873358611}
@@ -248,7 +248,7 @@ AnimatorStateMachine:
     m_Position: {x: 490, y: 170, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3274514872213028700}
-    m_Position: {x: 230, y: 170, z: 0}
+    m_Position: {x: 220, y: 170, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []

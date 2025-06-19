@@ -44,6 +44,18 @@ public class EspadaController : MonoBehaviour
             if (vidas != null)
             {
                 vidas.RecibirDaño(1); // Le quita 1 vida
+
+            }
+
+            Destroy(this.gameObject); // La espada desaparece igual
+        }
+
+        if (collision.CompareTag("Jefe"))
+        {
+            Jefe_final jefe = collision.GetComponent<Jefe_final>();
+            if (jefe != null)
+            {
+                jefe.RecibirDaño_espada(2); // Le quita 2 vidas
             }
 
             Destroy(this.gameObject); // La espada desaparece igual

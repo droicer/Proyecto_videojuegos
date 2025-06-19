@@ -24,6 +24,6 @@ public class GameManager : MonoBehaviour
 
     public void ActualizarUI()
     {
-        Num_Vidas.text = "Vidas: " + vidas;
+        Num_Vidas.text = " " + vidas;
     }
 }

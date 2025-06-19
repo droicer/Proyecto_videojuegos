@@ -32,12 +32,15 @@ public class Daño : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Zombi") && puedeRecibirDaño)
+        if ((collision.gameObject.CompareTag("Zombi")
+            || collision.gameObject.CompareTag("bola_de_fuego")
+            || collision.gameObject.CompareTag("Jefe"))
+            && puedeRecibirDaño)
+
         {
             // Reproducir sonido
             if (sonidoDaño != null)
                 audioSource.PlayOneShot(sonidoDaño);
-
 
             // Rebote hacia arriba
             rb.velocity = new Vector2(rb.velocity.x, reboteFuerza);
@@ -48,7 +51,6 @@ public class Daño : MonoBehaviour
             // Verificar si quedan vidas
             if (GameManager.vidas <= 0)
             {
-                // Elimina archivo viejo si quieres empezar desde cero
                 if (File.Exists(rutaGuardado))
                 {
                     File.Delete(rutaGuardado);
@@ -59,9 +61,10 @@ public class Daño : MonoBehaviour
             else
             {
                 StartCoroutine(Invulnerabilidad());
-                FindObjectOfType<GameManager>().SendMessage("ActualizarUI"); // Actualiza el texto de vidas
+                FindObjectOfType<GameManager>().SendMessage("ActualizarUI");
             }
         }
+
     }
 
     IEnumerator Invulnerabilidad()

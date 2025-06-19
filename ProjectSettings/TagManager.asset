@@ -12,6 +12,8 @@ TagManager:
   - Zombi
   - Music
   - suelo_movil
+  - Jefe
+  - bola_de_fuego
   layers:
   - Default
   - TransparentFX

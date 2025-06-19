@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.IO;
 
@@ -10,14 +10,14 @@ public class MenuPrincipal : MonoBehaviour
     private class DatosPartida
     {
         public string nombreEscena;
-        // Otros datos que puedas tener
+        // Puedes agregar más datos aquí si los necesitas
     }
 
     void Start()
     {
         rutaGuardado = Path.Combine(Application.persistentDataPath, "partida.json");
 
-        // Si no existe partida guardada, desactiva el bot�n "Continuar"
+        // Si no existe partida guardada, desactiva el botón "Continuar"
         if (!File.Exists(rutaGuardado))
         {
             GameObject btnContinuar = GameObject.Find("BtnContinuar");
@@ -34,6 +34,8 @@ public class MenuPrincipal : MonoBehaviour
             return;
         }
 
+        GuardarSeleccionEnArchivo(); // 💾 Guardamos personaje antes de continuar
+
         string json = File.ReadAllText(rutaGuardado);
         DatosPartida datos = JsonUtility.FromJson<DatosPartida>(json);
 
@@ -44,19 +46,20 @@ public class MenuPrincipal : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("No se encontr� el nombre de la escena en el archivo guardado.");
+            Debug.LogWarning("No se encontró el nombre de la escena en el archivo guardado.");
         }
     }
 
     public void NuevaPartida()
     {
-        // Elimina archivo viejo si quieres empezar desde cero
         if (File.Exists(rutaGuardado))
         {
             File.Delete(rutaGuardado);
         }
 
-        // Cambia "EscenaJuego" por la escena inicial que quieras para nueva partida
+        GuardarSeleccionEnArchivo(); // 💾 Guardamos personaje antes de empezar
+
+        // Cambia "SampleScene" por el nombre real de tu escena inicial
         SceneManager.LoadScene("SampleScene");
     }
 
@@ -67,5 +70,16 @@ public class MenuPrincipal : MonoBehaviour
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #endif
+    }
+
+    private void GuardarSeleccionEnArchivo()
+    {
+        // Tomamos la selección actual del personaje desde el script SelectorPersonaje
+        int numero = SelectorPersonaje.personajeSeleccionado;
+
+        string ruta = Path.Combine(Application.persistentDataPath, "personaje.txt");
+        File.WriteAllText(ruta, numero.ToString());
+
+        Debug.Log("Guardado personaje seleccionado: " + numero);
     }
 }

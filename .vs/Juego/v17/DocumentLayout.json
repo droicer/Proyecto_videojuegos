@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Droicer\\Juego\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\ReiniciarJugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Resources\\Personajes\\scrips\\ReiniciarJugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\RecojerVidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Resources\\Personajes\\scrips\\RecojerVidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Resources\\Personajes\\scrips\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\Camara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Resources\\Personajes\\scrips\\Camara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\EspadaLauncher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Resources\\Personajes\\scrips\\EspadaLauncher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\bola_de_fuego_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Resources\\Personajes\\scrips\\bola_de_fuego_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\Da\u00F1o.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Resources\\Personajes\\scrips\\Da\u00F1o.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\Nivel_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Resources\\Personajes\\scrips\\Nivel_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\Zombi\\Scrips\\Moverse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Resources\\Personajes\\Zombi\\Scrips\\Moverse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\MenuPrincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Resources\\Personajes\\scrips\\MenuPrincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\SelectorPersonaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Resources\\Personajes\\scrips\\SelectorPersonaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\Animaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Resources\\Personajes\\scrips\\Animaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\Zombi\\Scrips\\Jefe_final.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Resources\\Personajes\\Zombi\\Scrips\\Jefe_final.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,8 +42,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Jefe_final.cs",
+              "DocumentMoniker": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\Zombi\\Scrips\\Jefe_final.cs",
+              "RelativeDocumentMoniker": "Assets\\Resources\\Personajes\\Zombi\\Scrips\\Jefe_final.cs",
+              "ToolTip": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\Zombi\\Scrips\\Jefe_final.cs",
+              "RelativeToolTip": "Assets\\Resources\\Personajes\\Zombi\\Scrips\\Jefe_final.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAIBJwC8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T16:26:07.924Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -75,79 +97,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ReiniciarJugador.cs",
-              "DocumentMoniker": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\ReiniciarJugador.cs",
-              "RelativeDocumentMoniker": "Assets\\Resources\\Personajes\\scrips\\ReiniciarJugador.cs",
-              "ToolTip": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\ReiniciarJugador.cs",
-              "RelativeToolTip": "Assets\\Resources\\Personajes\\scrips\\ReiniciarJugador.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAADQAAAAiAAAAAAAAAA==",
+              "Title": "RecojerVidas.cs",
+              "DocumentMoniker": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\RecojerVidas.cs",
+              "RelativeDocumentMoniker": "Assets\\Resources\\Personajes\\scrips\\RecojerVidas.cs",
+              "ToolTip": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\RecojerVidas.cs",
+              "RelativeToolTip": "Assets\\Resources\\Personajes\\scrips\\RecojerVidas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T20:01:16.377Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Da\u00F1o.cs",
-              "DocumentMoniker": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\Da\u00F1o.cs",
-              "RelativeDocumentMoniker": "Assets\\Resources\\Personajes\\scrips\\Da\u00F1o.cs",
-              "ToolTip": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\Da\u00F1o.cs",
-              "RelativeToolTip": "Assets\\Resources\\Personajes\\scrips\\Da\u00F1o.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC0AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T20:00:20.664Z",
+              "WhenOpened": "2025-06-19T09:28:32.756Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Nivel_1.cs",
-              "DocumentMoniker": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\Nivel_1.cs",
-              "RelativeDocumentMoniker": "Assets\\Resources\\Personajes\\scrips\\Nivel_1.cs",
-              "ToolTip": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\Nivel_1.cs",
-              "RelativeToolTip": "Assets\\Resources\\Personajes\\scrips\\Nivel_1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Title": "Camara.cs",
+              "DocumentMoniker": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\Camara.cs",
+              "RelativeDocumentMoniker": "Assets\\Resources\\Personajes\\scrips\\Camara.cs",
+              "ToolTip": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\Camara.cs",
+              "RelativeToolTip": "Assets\\Resources\\Personajes\\scrips\\Camara.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T17:19:10.555Z",
+              "WhenOpened": "2025-06-18T16:08:17.836Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "MenuPrincipal.cs",
-              "DocumentMoniker": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\MenuPrincipal.cs",
-              "RelativeDocumentMoniker": "Assets\\Resources\\Personajes\\scrips\\MenuPrincipal.cs",
-              "ToolTip": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\MenuPrincipal.cs",
-              "RelativeToolTip": "Assets\\Resources\\Personajes\\scrips\\MenuPrincipal.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADsAAAArAAAAAAAAAA==",
+              "Title": "EspadaLauncher.cs",
+              "DocumentMoniker": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\EspadaLauncher.cs",
+              "RelativeDocumentMoniker": "Assets\\Resources\\Personajes\\scrips\\EspadaLauncher.cs",
+              "ToolTip": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\EspadaLauncher.cs",
+              "RelativeToolTip": "Assets\\Resources\\Personajes\\scrips\\EspadaLauncher.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAwwEIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T16:28:10.836Z",
+              "WhenOpened": "2025-06-18T15:53:20.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Resources\\Personajes\\scrips\\GameManager.cs",
+              "ToolTip": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Resources\\Personajes\\scrips\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T15:52:13.597Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Animaciones.cs",
-              "DocumentMoniker": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\Animaciones.cs",
-              "RelativeDocumentMoniker": "Assets\\Resources\\Personajes\\scrips\\Animaciones.cs",
-              "ToolTip": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\Animaciones.cs",
-              "RelativeToolTip": "Assets\\Resources\\Personajes\\scrips\\Animaciones.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Title": "Da\u00F1o.cs",
+              "DocumentMoniker": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\Da\u00F1o.cs",
+              "RelativeDocumentMoniker": "Assets\\Resources\\Personajes\\scrips\\Da\u00F1o.cs",
+              "ToolTip": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\Da\u00F1o.cs",
+              "RelativeToolTip": "Assets\\Resources\\Personajes\\scrips\\Da\u00F1o.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAIBJwCIAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T13:40:27.094Z",
+              "WhenOpened": "2025-06-18T14:37:00.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Moverse.cs",
+              "DocumentMoniker": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\Zombi\\Scrips\\Moverse.cs",
+              "RelativeDocumentMoniker": "Assets\\Resources\\Personajes\\Zombi\\Scrips\\Moverse.cs",
+              "ToolTip": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\Zombi\\Scrips\\Moverse.cs",
+              "RelativeToolTip": "Assets\\Resources\\Personajes\\Zombi\\Scrips\\Moverse.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAuwHEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T22:43:37.329Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "SelectorPersonaje.cs",
-              "DocumentMoniker": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\SelectorPersonaje.cs",
-              "RelativeDocumentMoniker": "Assets\\Resources\\Personajes\\scrips\\SelectorPersonaje.cs",
-              "ToolTip": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\SelectorPersonaje.cs",
-              "RelativeToolTip": "Assets\\Resources\\Personajes\\scrips\\SelectorPersonaje.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
+              "Title": "bola_de_fuego_controller.cs",
+              "DocumentMoniker": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\bola_de_fuego_controller.cs",
+              "RelativeDocumentMoniker": "Assets\\Resources\\Personajes\\scrips\\bola_de_fuego_controller.cs",
+              "ToolTip": "C:\\Users\\Droicer\\Juego\\Assets\\Resources\\Personajes\\scrips\\bola_de_fuego_controller.cs",
+              "RelativeToolTip": "Assets\\Resources\\Personajes\\scrips\\bola_de_fuego_controller.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAIBJwEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T13:03:09.845Z",
+              "WhenOpened": "2025-06-14T22:19:42.038Z",
               "EditorCaption": ""
             }
           ]

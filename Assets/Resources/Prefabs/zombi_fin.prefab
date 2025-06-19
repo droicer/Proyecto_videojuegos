@@ -14,11 +14,10 @@ GameObject:
   - component: {fileID: 1730239038031104680}
   - component: {fileID: 6910814280613402074}
   - component: {fileID: 4227146508164592356}
-  - component: {fileID: 7985287753226541208}
-  - component: {fileID: -6318098106197186140}
+  - component: {fileID: 9210220392597504797}
   m_Layer: 0
-  m_Name: Zombi
-  m_TagString: Zombi
+  m_Name: zombi_fin
+  m_TagString: Jefe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,7 +35,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7333598642204953174
 SpriteRenderer:
@@ -185,11 +184,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ea434b2261d294685ae97b6c3807ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 9
+  velocidad: 2
   colliderZombi: {fileID: 0}
   sonidoZombi: {fileID: 8300000, guid: 7330faf7b69a9e04981232e13890b020, type: 3}
   distanciaActivacion: 5
---- !u!114 &7985287753226541208
+--- !u!114 &9210220392597504797
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -198,21 +197,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7736334606174541533}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0e83d5068e7b4e498ae8c1bf04b22e7, type: 3}
+  m_Script: {fileID: 11500000, guid: 45535d2a3e32bec42aaa0684a378159e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 1
---- !u!114 &-6318098106197186140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7736334606174541533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8aae63e2322e206419c28802c8665344, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  daEspadas: 1
-  espadasQueDa: 2
+  vida: 3

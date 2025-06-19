@@ -59,12 +59,19 @@ public class EspadaLauncher : MonoBehaviour
         ActualizarTextoEspadas();
     }
 
+    public void GanarEspadas(int cantidad)
+    {
+        espadasDisponibles += cantidad;
+        ActualizarTextoEspadas();
+    }
+
+
 
     void ActualizarTextoEspadas()
     {
         if (textoNumEspadas != null)
         {
-            textoNumEspadas.text = "Espadas: " + espadasDisponibles.ToString();
+            textoNumEspadas.text = "" + espadasDisponibles.ToString();
         }
     }
 }

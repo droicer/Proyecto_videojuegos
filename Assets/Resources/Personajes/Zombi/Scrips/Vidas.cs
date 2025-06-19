@@ -18,10 +18,16 @@ public class Vidas : MonoBehaviour
         }
     }
 
-    // Método que destruye el zombi cuando muere
     void Morir()
     {
         Debug.Log("Zombi destruido");
+
+        if (ContadorZombis.instancia != null)
+        {
+            ContadorZombis.instancia.SumarZombi();
+        }
+
         Destroy(gameObject);
     }
+
 }

@@ -56,6 +56,17 @@ public class Moverse : MonoBehaviour
                 }
             }
         }
+
+        // Ignorar colisiones con el jefe
+        GameObject[] jefes = GameObject.FindGameObjectsWithTag("Jefe");
+        foreach (GameObject jefe in jefes)
+        {
+            Collider2D colJefe = jefe.GetComponent<Collider2D>();
+            if (colJefe != null)
+            {
+                Physics2D.IgnoreCollision(colliderZombi, colJefe);
+            }
+        }
     }
 
     void FixedUpdate()
