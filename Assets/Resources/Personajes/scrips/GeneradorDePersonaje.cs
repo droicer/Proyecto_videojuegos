@@ -3,11 +3,13 @@ using System.IO;
 
 public class GeneradorDePersonaje : MonoBehaviour
 {
-    public GameObject prefabJugador1;  // El objeto ya presente en escena (ej. hombre)
-    public GameObject prefabJugador2;  // El otro personaje en escena (ej. mujer)
-
     void Start()
     {
+        // Buscar los personajes por nombre en la escena
+        GameObject jugador1 = GameObject.Find("Player_1");
+        GameObject jugador2 = GameObject.Find("Player_2");
+
+        // Ruta del archivo que guarda la elección
         string ruta = Path.Combine(Application.persistentDataPath, "personaje.txt");
 
         if (File.Exists(ruta))
@@ -16,16 +18,15 @@ public class GeneradorDePersonaje : MonoBehaviour
 
             if (int.TryParse(contenido, out int numeroPersonaje))
             {
-                // Eliminar el que NO fue elegido
                 if (numeroPersonaje == 1)
                 {
-                    if (prefabJugador2 != null)
-                        Destroy(prefabJugador2);
+                    if (jugador2 != null)
+                        Destroy(jugador2);
                 }
                 else if (numeroPersonaje == 2)
                 {
-                    if (prefabJugador1 != null)
-                        Destroy(prefabJugador1);
+                    if (jugador1 != null)
+                        Destroy(jugador1);
                 }
                 else
                 {

@@ -1,17 +1,17 @@
 using UnityEngine;
-using UnityEngine.UI; // Necesario para usar Text UI
+using UnityEngine.UI;
 
 public class EspadaLauncher : MonoBehaviour
 {
-    public AudioClip sonidoLanzarEspada; // Clip que se reproducirá
-    private AudioSource audioSource;     // Fuente de audio
+    public AudioClip sonidoLanzarEspada;
+    private AudioSource audioSource;
 
-    public GameObject espadaPrefab;             // Prefab de la espada
-    public Transform puntoLanzamiento;          // Punto desde donde se lanza la espada
-    public int espadasDisponibles = 10;         // Número de espadas
-    public Text textoNumEspadas;                // Texto UI para mostrar cuántas espadas quedan
+    public GameObject espadaPrefab;
+    public Transform puntoLanzamiento;
+    public int espadasDisponibles = 10;
+    public Text textoNumEspadas;
 
-    private string direccion = "Derecha";       // Dirección actual del jugador
+    private string direccion = "Derecha";
 
     void Start()
     {
@@ -22,17 +22,14 @@ public class EspadaLauncher : MonoBehaviour
         ActualizarTextoEspadas();
     }
 
-
     void Update()
     {
-        // Cambiar dirección (simula detección según teclas)
         if (Input.GetKey(KeyCode.RightArrow))
             direccion = "Derecha";
         else if (Input.GetKey(KeyCode.LeftArrow))
             direccion = "Izquierda";
 
-        // Lanzar espada si se presiona L y quedan espadas
-        if (Input.GetKeyDown(KeyCode.L) && espadasDisponibles > 0)
+        if (Input.GetKeyDown(KeyCode.M) && espadasDisponibles > 0)
         {
             LanzarEspada();
         }
@@ -40,22 +37,23 @@ public class EspadaLauncher : MonoBehaviour
 
     void LanzarEspada()
     {
-        // Instanciar la espada
         GameObject espada = Instantiate(espadaPrefab, puntoLanzamiento.position, Quaternion.identity);
 
-        // Configurar dirección
+        // Rotar la espada según la dirección
+        if (direccion == "Izquierda")
+        {
+            espada.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+        }
+
         EspadaController scriptEspada = espada.GetComponent<EspadaController>();
         if (scriptEspada != null)
             scriptEspada.SetDirection(direccion);
 
-        // Restar una espada
         espadasDisponibles--;
 
-        // Reproducir sonido
         if (sonidoLanzarEspada != null && audioSource != null)
             audioSource.PlayOneShot(sonidoLanzarEspada);
 
-        // Actualizar el texto
         ActualizarTextoEspadas();
     }
 
@@ -65,13 +63,11 @@ public class EspadaLauncher : MonoBehaviour
         ActualizarTextoEspadas();
     }
 
-
-
     void ActualizarTextoEspadas()
     {
         if (textoNumEspadas != null)
         {
-            textoNumEspadas.text = "" + espadasDisponibles.ToString();
+            textoNumEspadas.text = espadasDisponibles.ToString();
         }
     }
 }

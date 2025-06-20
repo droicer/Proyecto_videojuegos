@@ -28,4 +28,16 @@ public class ContadorZombis : MonoBehaviour
             textoZombis.text = "" + totalMuertos;
         }
     }
+
+    public void EstablecerMuertes(int cantidad)
+    {
+        totalMuertos = cantidad;
+        ActualizarTexto();
+    }
+
+    public int TotalMuertos()
+    {
+        return totalMuertos;
+    }
+
 }

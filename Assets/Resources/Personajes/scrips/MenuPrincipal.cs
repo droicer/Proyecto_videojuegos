@@ -60,7 +60,7 @@ public class MenuPrincipal : MonoBehaviour
         GuardarSeleccionEnArchivo(); // 💾 Guardamos personaje antes de empezar
 
         // Cambia "SampleScene" por el nombre real de tu escena inicial
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Nivel 1");
     }
 
     public void SalirDelJuego()

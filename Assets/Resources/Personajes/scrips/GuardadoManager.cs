@@ -26,10 +26,16 @@ public class GuardadoManager : MonoBehaviour
         if (lanzador != null)
             datos.espadas = lanzador.espadasDisponibles;
 
+        ContadorZombis contador = FindObjectOfType<ContadorZombis>();
+        if (contador != null)
+            datos.muertes = contador.TotalMuertos(); 
+
+
         datos.nombreEscena = SceneManager.GetActiveScene().name;
 
         string json = JsonUtility.ToJson(datos, true);
         File.WriteAllText(rutaArchivo, json);
+
 
         Debug.Log("Partida guardada en: " + rutaArchivo);
     }
@@ -66,8 +72,16 @@ public class GuardadoManager : MonoBehaviour
             gm.ActualizarUI();
         }
 
+        //Cargar muertes (zombis eliminados)
+        ContadorZombis contador = FindObjectOfType<ContadorZombis>();
+        if (contador != null)
+        {
+            contador.EstablecerMuertes(datos.muertes);
+        }
+
         Debug.Log("Partida cargada.");
     }
+
 
     public string ObtenerNombreEscenaGuardada()
     {
