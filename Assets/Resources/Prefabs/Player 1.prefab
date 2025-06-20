@@ -425,4 +425,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reboteFuerza: 18
   invulnerabilidadTiempo: 1
-  "sonidoDa\xF1o": {fileID: 8300000, guid: c7aaa39e0505d3640ae7313dad95cfc2, type: 3}
+  "sonidoDa\xF1o": {fileID: 8300000, guid: 598fed1ecbb9ed14cb3eb7357f89a961, type: 3}

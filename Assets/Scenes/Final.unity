@@ -359,7 +359,7 @@ PrefabInstance:
       objectReference: {fileID: 1231228079}
     - target: {fileID: 457357933674065237, guid: ca4b5bb954b3f374dba356cd875eea27, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 457357933674065237, guid: ca4b5bb954b3f374dba356cd875eea27, type: 3}
       propertyPath: m_LocalPosition.x
@@ -447,6 +447,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1449859015832715978, guid: 38ea60ddfc757134d91ef706d31daedb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.26
+      objectReference: {fileID: 0}
     - target: {fileID: 1527610247734704474, guid: 38ea60ddfc757134d91ef706d31daedb, type: 3}
       propertyPath: tilemap
       value: 
@@ -461,15 +465,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4429850222479017179, guid: 38ea60ddfc757134d91ef706d31daedb, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4429850222479017179, guid: 38ea60ddfc757134d91ef706d31daedb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.6784806
+      value: -5.48
       objectReference: {fileID: 0}
     - target: {fileID: 4429850222479017179, guid: 38ea60ddfc757134d91ef706d31daedb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.7321715
+      value: -2.72
       objectReference: {fileID: 0}
     - target: {fileID: 4429850222479017179, guid: 38ea60ddfc757134d91ef706d31daedb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4757,6 +4761,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2014026020}
     - target: {fileID: 9210220392597504797, guid: fea4c0e8b5aa7f64b9657e05907398bb, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1285512188}
+    - target: {fileID: 9210220392597504797, guid: fea4c0e8b5aa7f64b9657e05907398bb, type: 3}
       propertyPath: zombiPrefab
       value: 
       objectReference: {fileID: 7736334606174541533, guid: 6a44031819e587f4f821bd44438c85eb, type: 3}
@@ -4776,6 +4784,10 @@ PrefabInstance:
       propertyPath: bolaDeFuegoPrefab
       value: 
       objectReference: {fileID: 8227506718946613164, guid: f33130c67ec75a9488c5954c265dc3cf, type: 3}
+    - target: {fileID: 9210220392597504797, guid: fea4c0e8b5aa7f64b9657e05907398bb, type: 3}
+      propertyPath: sonidoBolaDeFuego
+      value: 
+      objectReference: {fileID: 8300000, guid: e7e7400d988380c488da11c2685d6022, type: 3}
     - target: {fileID: 9210220392597504797, guid: fea4c0e8b5aa7f64b9657e05907398bb, type: 3}
       propertyPath: sonidoLanzarEspada
       value: 

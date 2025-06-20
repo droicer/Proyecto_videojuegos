@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
 public class Jefe_final : MonoBehaviour
 {
     public int vida = 14;
@@ -15,10 +14,21 @@ public class Jefe_final : MonoBehaviour
 
     public GameObject bolaDeFuegoPrefab;
     public Transform puntoDisparo;
-    public float offsetYBolaFuego = -0.3f; // ← Altura ajustable del disparo
+    public float offsetYBolaFuego = -0.3f;
 
     private bool lanzandoBolas = false;
-    private string direccion = "Derecha"; // Dirección actual
+    private string direccion = "Derecha";
+
+    public AudioClip sonidoBolaDeFuego;   // Clip de sonido
+    private AudioSource audioSource;      // Fuente de audio
+
+    void Start()
+    {
+        // Buscar o crear el componente AudioSource
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -61,7 +71,7 @@ public class Jefe_final : MonoBehaviour
 
     void Crecer()
     {
-        float factorCrecimiento = 1.1f; // Aumenta el tamaño en un 10%
+        float factorCrecimiento = 1.1f;
         transform.localScale *= factorCrecimiento;
         Debug.Log("Zombi ha crecido. Nuevo localScale: " + transform.localScale);
     }
@@ -72,16 +82,14 @@ public class Jefe_final : MonoBehaviour
         CancelInvoke("InvocarZombi");
         CancelInvoke("LanzarBolaDeFuego");
 
-        // Espera un segundo para que se vea que muere y luego carga la escena
         Invoke("CargarEscenaVictoria", 1f);
-        Destroy(gameObject, 1f); // Se destruye después de 1 segundo
+        Destroy(gameObject, 1f);
     }
 
     void CargarEscenaVictoria()
     {
-        SceneManager.LoadScene("win"); // Cambia "Victoria" por el nombre exacto de tu escena
+        SceneManager.LoadScene("win");
     }
-
 
     void InvocarZombi()
     {
@@ -96,19 +104,18 @@ public class Jefe_final : MonoBehaviour
     {
         if (bolaDeFuegoPrefab != null && puntoDisparo != null)
         {
-            // Aplica el offset vertical al punto de disparo
             Vector3 puntoAjustado = puntoDisparo.position + new Vector3(0f, offsetYBolaFuego, 0f);
-
             GameObject bola = Instantiate(bolaDeFuegoPrefab, puntoAjustado, Quaternion.identity);
 
-            // Configurar la dirección
             bola_de_fuego_controller script = bola.GetComponent<bola_de_fuego_controller>();
             if (script != null)
-            {
                 script.SetDirection(direccion);
-            }
 
             Debug.Log("¡Jefe lanzó bola de fuego hacia: " + direccion + "!");
+
+            // Reproducir sonido
+            if (sonidoBolaDeFuego != null && audioSource != null)
+                audioSource.PlayOneShot(sonidoBolaDeFuego);
         }
     }
 
